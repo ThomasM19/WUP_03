@@ -38,8 +38,13 @@ basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='e
 This plot shows that the people in the back consume more alcohol than the people in the front and middle rows. 
 
 
-
 ## Numerical Summarys 
+
+```{r}
+favstats(alcohol~Seat,data=davisdata)
+```
+
+The people in the back drink more alcohol than the people in the front and middle. 
 
 ## Inferential Tests
 
